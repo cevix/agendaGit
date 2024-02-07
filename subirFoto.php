@@ -12,7 +12,7 @@ echo "<!DOCTYPE html>
 <body>
 	<h3>Sube Tu foto de perfil</h3>
 	
-	<form name='formulario' action='actualizarDatos.php' method='get' enctype='multipart/form-data'>
+	<form name='formulario' action='actualizarDatos.php' method='post' enctype='multipart/form-data'>
 		<input type='hidden' name='opcion' value='$opcion'>
 		<input type='file' name='archivo'>
 		<label>nombre:</label><input type='text' name='nombre'>

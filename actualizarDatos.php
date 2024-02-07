@@ -50,9 +50,9 @@ if (!empty($_POST['enviar'])) {
 
 //actualizarDatos.php
 if (isset($_GET)) {
-	extract($_GET);
-}else{
 	extract($_POST);
+}else{
+	extract($_GET);
 }
 
 //realizar la conexion
