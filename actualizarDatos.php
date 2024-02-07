@@ -22,7 +22,7 @@ if (!empty($_POST['enviar'])) {
 			$size=$_FILES['archivo']['size'];
 			$destino="media/".$nombreFoto;
 				//solo permitimos imagenes de hasta 5mb
-			if (($tipo=="image/jpeg" && $size< 1024*1024*5)|| ($tipo=="application/pdf" || $tipo=="application/vnd.openxmlformats-officedocument.wordprocessingml.document" && $size< 1024*1024*2) || ($tipo=="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" && $size< 1024*1024) ||($tipo=="text/plain" && $size< 1024*1024)) {
+			if (($tipo=="image/jpeg" && $size< 1024*1024*5)) {
 				if (!file_exists($destino)) {
 					//No existe --> lo subimos
 					// Es un archivo permitido

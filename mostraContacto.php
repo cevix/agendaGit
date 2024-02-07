@@ -108,7 +108,7 @@ background: #DDFFA5;
 					echo "<h2>ha habido un error al cargar</h2>";
 				}
 				//editar
-				echo "<a href='editarContacto.php?opcion=update&cod_contacto=$fila[cod_contacto]&nombre=$fila[nombre]&apellidos=$fila[apellidos]&mail=$fila[mail]&telefono=$fila[telefono]&observaciones=$fila[observaciones]&foto=$fila[foto]&agregarFoto' title='ver ficha''><img class='icono' src='media/icono/edit-2.svg'><img><a>";
+				echo "<a href='editarContacto.php?opcion=update&cod_contacto=$fila[cod_contacto]&nombre=$fila[nombre]&apellidos=$fila[apellidos]&mail=$fila[mail]&telefono=$fila[telefono]&observaciones=$fila[observaciones]&foto=$fila[foto]&agregarFoto' title='ver ficha'><img class='icono' src='media/icono/edit-2.svg'><img><a>";
 				//borrar
 				echo "<a href='actualizarDatos.php?opcion=delete&cod_contacto=$fila[cod_contacto]&nombre=$fila[nombre]&apellidos=$fila[apellidos]'><img class='icono' src='media/icono/trash.svg'><img><a>";
 
@@ -117,12 +117,6 @@ background: #DDFFA5;
 
 				echo "</section>";
 
-			echo "<section class='contacto'>
-				<section class='icono'>
-					<a href='editarContacto.php?cod_contacto=$fila[cod_contacto]'>
-						<img src='media/nd.svg'>
-					</a>
-				</section>";
 
 
 
